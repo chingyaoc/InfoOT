@@ -17,7 +17,7 @@ Optimal transport aligns samples across distributions by minimizing the transpor
 - scikit-learn
 
 ## Usage Examples
-The code for InfoOT lie in `infoot.py`. For instance, the following code solves InfoOT given two data matrices:
+The code for InfoOT lie in `infoot.py`. For instance, the following code solves fused InfoOT given two data matrices:
 ```python
 # Xs: [n, d]
 # Xt: [m, d]
