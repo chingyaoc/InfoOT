@@ -61,7 +61,7 @@ python domain_adapt.py --src caltech --tgt dslr
 ```
 
 ## Cross-Domain Retrieval
-We will use the same data from the domain adaptation experiment. The following script reproduces the result with conditional score..
+We will use the same data from the domain adaptation experiment. The following script reproduces the result with the conditional score.
 ```
 python retrieval.py --src caltech --tgt dslr
 ```
