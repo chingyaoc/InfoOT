@@ -21,7 +21,6 @@ The code for InfoOT lie in `infoot.py`. For instance, the following code solves 
 ```python
 # Xs: [n, d]
 # Xt: [m, d]
-
 from infoot import FusedInfoOT
 
 ot = FusedInfoOT(Xs, Xt, h=0.5, reg=1.)
@@ -30,9 +29,15 @@ P = ot.solve()
 If the source label is given, one can use it to refine the source pairwise distance as follows:
 ```python
 # Ys: [n]
-
 ot = FusedInfoOT(Xs, Xt, Ys=Ys, h=0.5, reg=1.)
 P = ot.solve()
+```
+
+Many applications of optimal transport involve mapping source points to a target domain. One can perform either barycentric or conditional projection with the following code. Note that the conditional projection can generalize to unseen samples.
+```python
+# project the source onto target
+ProjX1 = ot.project(Xs, method='barycentric')
+ProjX2 = ot.project(Xs, method='conditional')
 ```
 
 For aligning domains whose supports lie in different metric spaces, e.g., supports with different modalities or dimensionality, one can simply adopt the standar InfoOT:
@@ -40,12 +45,12 @@ For aligning domains whose supports lie in different metric spaces, e.g., suppor
 # Xs: [n, d1]
 # Xt: [m, d2]
 # d1 != d2
-
 from infoot import InfoOT
 
 ot = InfoOT(Xs, Xt, h=0.5, reg=0.05)
 P = ot.solve()
 ```
+
 
 Other useful functions for computing kernels, the gradient w.r.t. mutual information, projection can also be found in `infoot.py`.
 
