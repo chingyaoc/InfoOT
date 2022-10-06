@@ -48,7 +48,7 @@ For aligning domains whose supports lie in different metric spaces, e.g., suppor
 from infoot import InfoOT
 
 ot = InfoOT(Xs, Xt, h=0.5, reg=0.05)
-P = ot.solve()
+P = ot.solve(numIter=100)
 ```
 
 
