@@ -3,7 +3,7 @@
 Optimal transport aligns samples across distributions by minimizing the transportation cost between them, e.g., the geometric distances. Yet, it ignores coherence structure in the data such as clusters, does not handle outliers well, and cannot integrate new data points. To address these drawbacks, we propose InfoOT, an information-theoretic extension of optimal transport that maximizes the mutual information between domains while minimizing geometric distances. The resulting objective can still be formulated as a (generalized) optimal transport problem, and can be efficiently solved by projected gradient descent. This formulation yields a new projection method that is robust to outliers and generalizes to unseen samples. 
 
 
-**InfoOT: Information Maximizing Optimal Transport** [[paper]](https://arxiv.org/abs/2007.00224)
+**InfoOT: Information Maximizing Optimal Transport** [[paper]](https://arxiv.org/abs/2210.03164)
 <br/>
 [Ching-Yao Chuang](https://chingyaoc.github.io/), 
 [Stefanie Jegelka](https://people.csail.mit.edu/stefje/), and
@@ -73,7 +73,7 @@ python retrieval.py --src caltech --tgt dslr
 @article{chuang2022info,
   title={InfoOT: Information Maximizing Optimal Transport},
   author={Chuang, Ching-Yao and Jegelka, Stefanie and Alvarez-Melis, David},
-  journal={arXiv preprint arXiv:????.?????},
+  journal={arXiv preprint arXiv:2210.03164},
   year={2022}
 }
 ```
