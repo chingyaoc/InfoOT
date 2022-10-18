@@ -204,7 +204,6 @@ class InfoOT():
         self.Xs = Xs
         self.Xt = Xt
         self.h = h
-        self.lam = lam
         self.reg = reg
 
         # init kernel
