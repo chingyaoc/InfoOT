@@ -63,7 +63,7 @@ def compute_kernel(Cx, Cy, h):
 
 def migrad(P, Kx, Ky):
     '''
-    compute the ratio berween joint and marginal densities
+    compute the gradient w.r.t. KDE mutual information
     Parameters
     ----------
     P : transportation plan
