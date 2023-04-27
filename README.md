@@ -70,7 +70,7 @@ python retrieval.py --src caltech --tgt dslr
 ## Citation
 
 ```
-@inproceedings{chuang2022info,
+@inproceedings{chuang2023info,
   title={InfoOT: Information Maximizing Optimal Transport},
   author={Chuang, Ching-Yao and Jegelka, Stefanie and Alvarez-Melis, David},
   booktitle={International Conference on Machine Learning},
